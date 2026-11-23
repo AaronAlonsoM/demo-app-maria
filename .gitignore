@@ -1,0 +1,6 @@
+node_modules/
+.screenplay/
+*.mp4
+*.storyboard.png
+.impeccable/live/
+**/.impeccable/hook.cache.json

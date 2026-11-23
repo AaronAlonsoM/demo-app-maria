@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StudyFlow · Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>StudyFlow</h1>
+    <nav>
+      <button class="tab active" data-view="tareas">Tareas</button>
+      <button class="tab" data-view="progreso">Progreso</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="tareas" class="view">
+      <form id="nueva" class="card row">
+        <input id="texto" placeholder="Nueva tarea…" required>
+        <select id="asignatura" aria-label="Asignatura"></select>
+        <button type="submit">Añadir</button>
+      </form>
+      <ul id="lista" class="card"></ul>
+    </section>
+
+    <section id="progreso" class="view" hidden>
+      <div class="kpis">
+        <div class="card kpi"><span id="kpi-hechas">0</span><small>Completadas</small></div>
+        <div class="card kpi"><span id="kpi-pendientes">0</span><small>Pendientes</small></div>
+        <div class="card kpi"><span id="kpi-pct">0%</span><small>Avance</small></div>
+      </div>
+      <div id="barras" class="card"></div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

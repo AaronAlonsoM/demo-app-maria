@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/gmpetrov/agent-screenplay/main/schema/scenario.schema.json",
+  "url": "src/index.html",
+  "style": { "background": "dawn" },
+  "steps": [
+    { "highlight": "css=#lista", "text": "Todas tus tareas de estudio en un sitio" },
+    { "type": "Preparar examen de óptica", "into": "placeholder=Nueva tarea…" },
+    { "select": "role=combobox[name='Asignatura']", "option": "Física" },
+    { "click": "role=button[name='Añadir']" },
+    { "click": "text=Problemas de cinemática", "say": "Marca lo que ya has hecho" },
+    { "click": "role=button[name='Progreso']" },
+    { "highlight": "css=#barras", "text": "Y mira tu avance por asignatura" }
+  ]
+}
